@@ -101,18 +101,23 @@ Setiap <label> dihubungkan dengan input melalui atribut for yang sama dengan id 
 7. Membuat Validasi Form Dasar (Section 4)
 Form dengan input nama (required, minlength), email (required), dan umur (type="number", min="17", max="60", required).
 Uji dengan menekan tombol Kirim tanpa mengisi data. Browser akan menampilkan pesan peringatan otomatis.
+
 8. Menerapkan Semantic HTML (Section 5)
 Gunakan <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer> agar struktur halaman jelas dan bermakna.
+
 9. Menambahkan Multimedia (Section 6)
 Audio: <audio controls> dengan <source src="..." type="audio/mp4">.
 Video: <video controls width="480"> dengan <source src="..." type="video/mp4">.
 Tambahkan teks cadangan di dalam tag untuk browser yang tidak mendukung.
+
 10. Membuat Proyek Mini Biodata (Section 7)
 <article> pertama: tabel biodata (NIM, Nama, Program Studi, Jenis Kelamin, Email).
 <article> kedua: form biodata (nama, email, program studi, alamat) dengan validasi required dan minlength.
+    
 11. Membuat Kesimpulan dan Footer
 Tambahkan section kesimpulan yang merangkum materi.
 Tutup halaman dengan <footer> berisi hak cipta dan nama praktikum.
+
 12. Menjalankan dan Menguji
 Buka index.html di browser (klik dua kali, atau gunakan ekstensi Live Server di VS Code).
 Klik menu navigasi dan pastikan halaman berpindah ke section yang sesuai.
@@ -126,10 +131,11 @@ Path audio memakai ../ sedangkan path video tidak. Pastikan keduanya sesuai loka
     
 Jawaban Pertanyaan
 1. Apa fungsi <table>, <tr>, <th>, dan <td>?
-<table>: membuat tabel, yaitu wadah utama untuk menampilkan data dalam baris dan kolom.
-<tr> (table row): membuat satu baris di dalam tabel.
-<th> (table header): membuat sel judul kolom atau baris. Teksnya biasanya tebal dan rata tengah.
-<td> (table data): membuat sel yang berisi data biasa.
+   
+    <table>: membuat tabel, yaitu wadah utama untuk menampilkan data dalam baris dan kolom.
+    <tr> (table row): membuat satu baris di dalam tabel.
+    <th> (table header): membuat sel judul kolom atau baris. Teksnya biasanya tebal dan rata tengah.
+    <td> (table data): membuat sel yang berisi data biasa.
 
 Contoh:
 
@@ -144,6 +150,7 @@ html
     <td>Rahsya Alfrendika</td>
   </tr>
 </table>
+
 2. Apa perbedaan <th> dan <td>?
 
 <th> adalah sel judul/header yang secara bawaan tampil tebal dan rata tengah, serta memberi makna bahwa isinya adalah label bagi kolom atau baris (berguna untuk aksesibilitas dan screen reader). <td> adalah sel data biasa yang berisi isi tabel dan tampil dengan teks normal rata kiri.
