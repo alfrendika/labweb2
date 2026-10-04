@@ -1,6 +1,9 @@
 Nama: Rahsya Alfrendika
+
 NIM: 312510339 
+
 Program Studi: Teknik Informatika 
+
 Universitas: Universitas Pelita Bangsa
 
 Deskripsi
