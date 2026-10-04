@@ -99,6 +99,7 @@ Tombol	<button type="submit"> dan type="reset"	kirim dan reset
 Setiap <label> dihubungkan dengan input melalui atribut for yang sama dengan id input.
 
 7. Membuat Validasi Form Dasar (Section 4)
+
 Form dengan input nama (required, minlength), email (required), dan umur (type="number", min="17", max="60", required).
 Uji dengan menekan tombol Kirim tanpa mengisi data. Browser akan menampilkan pesan peringatan otomatis.
 
@@ -122,12 +123,20 @@ Tutup halaman dengan <footer> berisi hak cipta dan nama praktikum.
 Buka index.html di browser (klik dua kali, atau gunakan ekstensi Live Server di VS Code).
 Klik menu navigasi dan pastikan halaman berpindah ke section yang sesuai.
 Coba kirim form kosong untuk menguji validasi.
+
 Putar audio dan video untuk memastikan file terbaca.
 Perkecil jendela browser untuk menguji tampilan responsif.
 Catatan Perbaikan
-Nilai rata-rata pada tabel nilai seharusnya 88.2, karena (85 + 90 + 88 + 92 + 86) / 5 = 441 / 5 = 88.2. Pada kode tertulis 88.6.
-NIM 312510339 muncul dua kali (Rahsya Alfrendika dan Andika). NIM seharusnya unik, jadi salah satunya perlu diperiksa.
-Path audio memakai ../ sedangkan path video tidak. Pastikan keduanya sesuai lokasi file agar media dapat diputar.
+
+Nilai rata-rata pada tabel nilai seharusnya 88.2, karena (85 + 90 + 88 + 92 + 86) / 5 = 441 / 5 = 88.2.
+Pada kode tertulis 88.6.
+NIM 312510339 muncul dua kali (Rahsya Alfrendika dan Andika). 
+NIM seharusnya unik, jadi salah satunya perlu diperiksa.
+Path audio memakai ../ sedangkan path video tidak.
+Pastikan keduanya sesuai lokasi file agar media dapat diputar.
+
+
+
     
 Jawaban Pertanyaan
 1. Apa fungsi <table>, <tr>, <th>, dan <td>?
@@ -139,17 +148,17 @@ Jawaban Pertanyaan
 
 Contoh:
 
-html
-<table>
-  <tr>
-    <th>NIM</th>
-    <th>Nama</th>
-  </tr>
-  <tr>
-    <td>312510339</td>
+        html
+        <table>
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+      </tr>
+      <tr>
+            <td>312510339</td>
     <td>Rahsya Alfrendika</td>
-  </tr>
-</table>
+      </tr>
+    </table>
 
 2. Apa perbedaan <th> dan <td>?
 
