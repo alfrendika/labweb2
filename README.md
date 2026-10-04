@@ -76,27 +76,27 @@ Tambahkan .info-box sebagai penjelasan eksperimen colspan.
 
 Form dengan action="#" dan method="post" yang berisi:
 
-Elemen	Tipe / Tag	Keterangan
+    Elemen	Tipe / Tag	Keterangan
 
-Nama Lengkap	input type="text"	required, minlength="3"
+    Nama Lengkap	input type="text"	required, minlength="3"
 
-Email	input type="email"	required
+    Email	input type="email"	required
 
-Password	input type="password"	required, minlength="6"
+    Password	input type="password"	required, minlength="6"
 
-Tanggal Lahir	input type="date"	required
+        Tanggal Lahir	input type="date"	required
 
-Jenis Kelamin	input type="radio"	satu pilihan, name sama
+    Jenis Kelamin	input type="radio"	satu pilihan, name sama
 
-Keahlian	input type="checkbox"	boleh lebih dari satu
+    Keahlian	input type="checkbox"	boleh lebih dari satu
 
-Program Studi	<select> + <option>	dropdown
+    Program Studi	<select> + <option>	dropdown
 
-Alamat	<textarea>	rows="5"
+    Alamat	<textarea>	rows="5"
 
-Tombol	<button type="submit"> dan type="reset"	kirim dan reset
+    Tombol	<button type="submit"> dan type="reset"	kirim dan reset
 
-Setiap <label> dihubungkan dengan input melalui atribut for yang sama dengan id input.
+    Setiap <label> dihubungkan dengan input melalui atribut for yang sama dengan id input.
 
 7. Membuat Validasi Form Dasar (Section 4)
 
@@ -141,39 +141,43 @@ Pastikan keduanya sesuai lokasi file agar media dapat diputar.
 Jawaban Pertanyaan
 1. Apa fungsi <table>, <tr>, <th>, dan <td>?
    
-    <table>: membuat tabel, yaitu wadah utama untuk menampilkan data dalam baris dan kolom.
-    <tr> (table row): membuat satu baris di dalam tabel.
-    <th> (table header): membuat sel judul kolom atau baris. Teksnya biasanya tebal dan rata tengah.
-    <td> (table data): membuat sel yang berisi data biasa.
+        <table>: membuat tabel, yaitu wadah utama untuk menampilkan data dalam baris dan kolom.
+        <tr> (table row): membuat satu baris di dalam tabel.
+        <th> (table header): membuat sel judul kolom atau baris. Teksnya biasanya tebal dan rata tengah.
+        <td> (table data): membuat sel yang berisi data biasa.
 
-Contoh:
+    Contoh:
 
         html
         <table>
           <tr>
             <th>NIM</th>
             <th>Nama</th>
-      </tr>
-      <tr>
-            <td>312510339</td>
-    <td>Rahsya Alfrendika</td>
-      </tr>
-    </table>
+          </tr>
+          <tr>
+                <td>312510339</td>
+        <td>Rahsya Alfrendika</td>
+          </tr>
+        </table>
 
 2. Apa perbedaan <th> dan <td>?
 
-<th> adalah sel judul/header yang secara bawaan tampil tebal dan rata tengah, serta memberi makna bahwa isinya adalah label bagi kolom atau baris (berguna untuk aksesibilitas dan screen reader). <td> adalah sel data biasa yang berisi isi tabel dan tampil dengan teks normal rata kiri.
+    <th> adalah sel judul/header yang secara bawaan tampil tebal dan rata tengah, serta memberi makna bahwa isinya adalah label bagi kolom atau baris (berguna untuk aksesibilitas dan             screen reader).
+    <td> adalah sel data biasa yang berisi isi tabel dan tampil dengan teks normal rata kiri.
 
 3. Apa fungsi colspan pada tabel?
 
-colspan menggabungkan beberapa kolom menjadi satu sel pada baris yang sama. Contohnya colspan="2" membuat sel memanjang menutupi dua kolom. Pada praktikum ini dipakai di <tfoot>, misalnya <td colspan="2">Rata-rata</td>, sehingga label "Rata-rata" menempati dua kolom dan nilainya berada di kolom ketiga.
+colspan menggabungkan beberapa kolom menjadi satu sel pada baris yang sama. 
+Contohnya colspan="2" membuat sel memanjang menutupi dua kolom. 
+Pada praktikum ini dipakai di <tfoot>, misalnya <td colspan="2">Rata-rata</td>, sehingga label "Rata-rata" menempati dua kolom dan nilainya berada di kolom ketiga.
 
 4. Apa fungsi <form> dalam HTML?
 
-<form> adalah wadah untuk mengumpulkan input dari pengguna dan mengirimkannya ke server atau halaman tertentu. Atribut pentingnya:
+<form> adalah wadah untuk mengumpulkan input dari pengguna dan mengirimkannya ke server atau halaman tertentu. 
+    Atribut pentingnya:
 
-action: tujuan pengiriman data (pada praktikum # berarti halaman itu sendiri).
-method: cara pengiriman, yaitu get atau post.
+    action: tujuan pengiriman data (pada praktikum # berarti halaman itu sendiri).
+    method: cara pengiriman, yaitu get atau post.
 
 Semua elemen input seperti teks, radio, checkbox, select, textarea, dan tombol submit ditempatkan di dalamnya.
 
@@ -202,17 +206,22 @@ Penulisan tag	Tag tunggal (tidak punya penutup)	Punya tag pembuka dan penutup <t
 Nilai awal	Atribut value	Ditulis di antara tag
 Ukuran	size / CSS	rows dan cols / CSS
 
-8. Apa fungsi semantic HTML seperti <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer>?
+8.     Apa fungsi semantic HTML seperti
+           <header> <nav> <main> <section> <article> <aside>dan <footer>?
 
-Semantic HTML adalah elemen yang namanya menjelaskan makna isinya. Manfaatnya: struktur halaman lebih mudah dibaca developer, lebih ramah mesin pencari (SEO), dan lebih mudah diakses oleh pembaca layar.
+ Semantic HTML adalah elemen yang namanya menjelaskan makna isinya. 
+ 
+ Manfaatnya: struktur halaman lebih mudah dibaca developer, 
+ 
+lebih ramah mesin pencari (SEO), dan lebih mudah diakses oleh pembaca layar.
 
-<header>: bagian kepala halaman atau section, biasanya berisi logo dan judul.
-<nav>: kumpulan tautan navigasi utama.
-<main>: isi utama halaman (hanya satu per halaman).
-<section>: pengelompokan konten yang bertema sama, biasanya dengan judul sendiri.
-<article>: konten mandiri yang bisa berdiri sendiri, misalnya artikel atau postingan.
-<aside>: informasi tambahan atau sampingan yang berkaitan dengan konten utama.
-<footer>: bagian kaki halaman, biasanya berisi hak cipta dan info kontak.
+    <header>: bagian kepala halaman atau section, biasanya berisi logo dan judul.
+    <nav>: kumpulan tautan navigasi utama.
+    <main>: isi utama halaman (hanya satu per halaman).
+    <section>: pengelompokan konten yang bertema sama, biasanya dengan judul sendiri.
+    <article>: konten mandiri yang bisa berdiri sendiri, misalnya artikel atau postingan.
+    <aside>: informasi tambahan atau sampingan yang berkaitan dengan konten utama.
+    <footer>: bagian kaki halaman, biasanya berisi hak cipta dan info kontak.
     
 9. Apa fungsi required, min, max, dan minlength?
 
