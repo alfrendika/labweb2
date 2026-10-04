@@ -11,53 +11,89 @@ Deskripsi
 Praktikum ini membuat satu halaman web Portal Mahasiswa (index.html) yang memakai HTML lanjutan: tabel, form, validasi form, semantic HTML, dan multimedia. Tampilan dibuat dengan CSS internal (di dalam tag <style>) dengan tema warna hijau, navigasi sticky, dan desain responsif.
 
 Struktur Folder
+
 Lab2Web/
+
 ├── gambar/
+
 │   └── Logo-Universitas-Pelita-Bangsa-removebg-preview.png
+
 ├── WhatsApp Audio 2026-10-04 at 09.11.55.mp4
+
 └── praktikum/               (folder file HTML)
+
     ├── index.html
+    
     └── Video 2026-10-03 at 23.04.27.mp4
 
 Sesuaikan struktur dengan folder proyek masing-masing. Path file gambar, audio, dan video pada HTML harus cocok dengan lokasi file sebenarnya.
 
 Langkah-Langkah Praktikum
+
 1. Membuat Kerangka Dasar HTML
+   
 Buat file index.html.
+
 Tulis struktur dasar: <!DOCTYPE html>, <html lang="id">, <head>, dan <body>.
+
 Di <head>, tambahkan <meta charset="UTF-8">, <meta name="viewport" ...> agar responsif, dan <title>.
+
 2. Membuat Styling CSS
 
 Tambahkan CSS di dalam <style> pada <head>:
 
 Reset dasar (box-sizing: border-box) dan pengaturan body.
+
 Gaya header, nav (sticky), main, section, footer.
+
 Gaya tabel, form, tombol, dan kotak informasi (.info-box).
+
+
 Media query (max-width: 700px) agar tampilan nyaman di layar kecil.
+
 3. Membuat Header dan Navigasi
+
 <header> berisi logo universitas dan judul "Portal Mahasiswa".
+    
 <nav> berisi tautan anchor (#beranda, #mahasiswa, #form, #multimedia, #biodata) yang mengarah ke id tiap section.
+    
 4. Membuat Tabel Data Mahasiswa (Section 1)
+   
 Gunakan <table>, <caption>, <thead>, <tbody>, dan <tfoot>.
+
 Kolom: NIM, Nama, Program Studi.
+
 Baris footer memakai colspan="2" untuk menggabungkan dua kolom.
+
 5. Membuat Tabel Nilai Praktikum (Section 2)
 Tabel dengan kolom No, Nama, Nilai.
+
 Baris <tfoot> menampilkan rata-rata nilai dengan colspan="2".
+
 Tambahkan .info-box sebagai penjelasan eksperimen colspan.
+
 6. Membuat Form Registrasi (Section 3)
 
 Form dengan action="#" dan method="post" yang berisi:
 
 Elemen	Tipe / Tag	Keterangan
+
 Nama Lengkap	input type="text"	required, minlength="3"
+
 Email	input type="email"	required
+
 Password	input type="password"	required, minlength="6"
+
 Tanggal Lahir	input type="date"	required
+
 Jenis Kelamin	input type="radio"	satu pilihan, name sama
+
 Keahlian	input type="checkbox"	boleh lebih dari satu
+
 Program Studi	<select> + <option>	dropdown
+
 Alamat	<textarea>	rows="5"
+
 Tombol	<button type="submit"> dan type="reset"	kirim dan reset
 
 Setiap <label> dihubungkan dengan input melalui atribut for yang sama dengan id input.
@@ -87,6 +123,7 @@ Catatan Perbaikan
 Nilai rata-rata pada tabel nilai seharusnya 88.2, karena (85 + 90 + 88 + 92 + 86) / 5 = 441 / 5 = 88.2. Pada kode tertulis 88.6.
 NIM 312510339 muncul dua kali (Rahsya Alfrendika dan Andika). NIM seharusnya unik, jadi salah satunya perlu diperiksa.
 Path audio memakai ../ sedangkan path video tidak. Pastikan keduanya sesuai lokasi file agar media dapat diputar.
+    
 Jawaban Pertanyaan
 1. Apa fungsi <table>, <tr>, <th>, dan <td>?
 <table>: membuat tabel, yaitu wadah utama untuk menampilkan data dalam baris dan kolom.
