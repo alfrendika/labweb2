@@ -167,6 +167,7 @@ Jumlah pilihan	Hanya satu dalam satu grup	Boleh lebih dari satu
 Pengelompokan	Beberapa radio dengan name yang sama menjadi satu grup	Setiap checkbox bisa berdiri sendiri
 Membatalkan pilihan	Tidak bisa dibatalkan dengan klik ulang	Bisa dicentang dan dihapus centangnya
 Contoh pada praktikum	Jenis Kelamin (Laki-laki / Perempuan)	Keahlian (HTML, CSS, JavaScript)
+
 6. Mengapa <label> sebaiknya terhubung dengan id input melalui atribut for?
 
 Karena hubungan tersebut memberi beberapa manfaat:
@@ -184,6 +185,7 @@ Penggunaan	Data singkat (nama, email)	Teks panjang (alamat, komentar, pesan)
 Penulisan tag	Tag tunggal (tidak punya penutup)	Punya tag pembuka dan penutup <textarea></textarea>
 Nilai awal	Atribut value	Ditulis di antara tag
 Ukuran	size / CSS	rows dan cols / CSS
+
 8. Apa fungsi semantic HTML seperti <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer>?
 
 Semantic HTML adalah elemen yang namanya menjelaskan makna isinya. Manfaatnya: struktur halaman lebih mudah dibaca developer, lebih ramah mesin pencari (SEO), dan lebih mudah diakses oleh pembaca layar.
@@ -195,6 +197,7 @@ Semantic HTML adalah elemen yang namanya menjelaskan makna isinya. Manfaatnya: s
 <article>: konten mandiri yang bisa berdiri sendiri, misalnya artikel atau postingan.
 <aside>: informasi tambahan atau sampingan yang berkaitan dengan konten utama.
 <footer>: bagian kaki halaman, biasanya berisi hak cipta dan info kontak.
+    
 9. Apa fungsi required, min, max, dan minlength?
 
 Semuanya adalah atribut validasi form bawaan HTML5:
